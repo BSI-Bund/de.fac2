@@ -1,0 +1,34 @@
+
+<project basedir="." default="install" name="de.fac2 SmartCafe build">
+  <!-- Applet building dependencies -->
+
+  <property name="JC304" value="extlibs/jc304_kit"/>
+  <property name="SCGC11" value="extlibs/GenericCrypto1.1"/> 	<!-- genericcrypto1.1.jar -->
+  <property name="SCDGS11" value="extlibs/DGSecurity1.1"/>    	<!-- GDSecurity1.1.jar -->
+  <property name="SCSM20" value="extlibs/SecureMessaging2.0"/>  	<!-- SecureMessaging2.0.jar -->
+ 
+  
+  <!-- ant-javacard task from javacard.pro -->
+  <taskdef name="javacard" classname="pro.javacard.ant.JavaCard" classpath="tools/ant-javacard.jar"/>
+  
+  <!-- CCU2F applet on Sm@rtCafe Expert 7 C3-->
+  <target name="smartcafe">
+  	<delete file="defac2.cap"/>
+    <javacard jckit="${JC304}">
+      <cap output="defac2.cap" aid="A000000647" sources="src" javaversion="1.6">
+        <applet class="de.tsenger.u2f.U2FApplet" aid="A0000006472F0001"/>
+        <import exps="${SCSM20}" jar="${SCSM20}/SecureMessaging2.0.jar"/>
+      	<import exps="${SCGC11}" jar="${SCGC11}/genericcrypto1.1.jar"/>
+      	<import exps="${SCDGS11}" jar="${SCDGS11}/GDSecurity1.1.jar"/>
+      </cap>
+    </javacard>
+  </target>
+ 	
+  <!-- Install Applet -->
+  <target name="install" depends="smartcafe">
+    <exec executable="/bin/bash">
+	  <arg value="scripts/install+personalize.sh"/>
+	</exec>
+  </target>
+	
+</project>
