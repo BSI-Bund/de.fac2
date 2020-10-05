@@ -10,5 +10,5 @@ This repository also contains the developer documentation necessary for CC certi
 The attestation certificate in this repository has been replaced by a sample certificate. The certified token uses an attestation certificate signed by the [BSI FIDO U2F root](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/FIDO_U2F/FIDO_U2F_Root_Zertifikat_cer.html).
 
 # Note
-The FIDO U2F Authenticator applet described in this certification procedure is set up as a pilot project, which is not intended for production. For this reason some requirements of the produced TOE were only exemplary implemented (especially the life cycle ALC) and do not correspond to the requirements for secure products. The certificate is only intended to show the feasibility by means of an exemplary certification.
+The FIDO U2F Authenticator applet described in this certification procedure is set up as a **pilot project, which is not intended for production**. For this reason some requirements of the produced TOE were only exemplary implemented (especially the life cycle ALC) and do not correspond to the requirements for secure products. The certificate is only intended to show the feasibility by means of an exemplary certification.
 Nevertheless feel free to use this source and docs as inspiration for your own product. Even though the CC process can be a tough challenge.
