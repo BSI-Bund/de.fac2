@@ -5,7 +5,7 @@
 ![Urkunde](https://github.com/tsenger/de.fac2/blob/master/docs/CC/1060_de.fac2_Urkunde_Header.png)
 ![Fido U2F Level 3+ certified](https://github.com/tsenger/de.fac2/blob/master/docs/fido_level3+.png)
 
-The implementation of this applet on a G+D Sm@rtCafe Expert 7.0 javacard was [certified by the BSI on May 8, 2020](https://github.com/tsenger/de.fac2/blob/master/docs/CC/1060_de.fac2_Urkunde.pdf) and [Fido Level 3+ certified on January 15, 2021](https://github.com/tsenger/de.fac2/blob/master/docs/FIDO%20U2F%20Certificate%20U2F100020210115001%20-%20U2F%20L3%2B%20Authenticator%20-BSI.pdf). This repository contains all sources of the applet. However, the G+D libraries for the Sm@rtCafe platform cannot be provided here. These can only be obtained directly from G+D.
+The implementation of this applet on a G+D Sm@rtCafe Expert 7.0 javacard was [certified by the BSI on May 8, 2020](https://github.com/BSI-Bund/de.fac2/blob/master/docs/CC/1060_de.fac2_Urkunde.pdf) and [Fido Level 3+ certified on January 15, 2021](https://github.com/BSI-Bund/de.fac2/blob/master/docs/FIDO%20U2F%20Certificate%20U2F100020210115001%20-%20U2F%20L3%2B%20Authenticator%20-BSI.pdf). This repository contains all sources of the applet. However, the G+D libraries for the Sm@rtCafe platform cannot be provided here. These can only be obtained directly from G+D.
 
 This repository also contains the developer documentation necessary for CC certification. Parts of it have been redacted because they contain proprietary information of third parties.  
 
